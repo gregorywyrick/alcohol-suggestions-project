@@ -8,7 +8,7 @@
   </head>
   
   <body>
-    <section class="hero is-small is-flex is-dark">
+    <section class="hero is-small is-flex is-link">
       <div class="hero-body">
         <h1 class="title has-text-centered has-text-weight-bold is-size-1 is-family-primary">Alcohol Recommendations</h1>
         <p class="subtitle has-text-centered is-size-4 is-family-primary">
@@ -19,28 +19,29 @@
     <div class="tile is-ancestor">
       <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box" style="line-height: 17;">
-          <p class="title">wine</p>
-      <button class="button" id="cab-button">Cabernet</button>
-      <button class="button" id="pinot-button">Pinot Grigio</button>
-      <button class="button" id="mer-button">Merlot</button>
-      <button class="button" id="char-button">Chardonnay</button>
+          <p class="title">Wine Selection</p>      
+          <button class="button is-responsive is-danger is-light is-rounded" id="cab-button">Cabernet</button>
+          <button class="button is-responsive is-danger is-rounded" id="mer-button">Merlot</button>
+          <button class="button is-responsive is-warning is-light is-rounded" id="pinot-button">Pinot Grigio</button>
+          <button class="button is-responsive is-warning is-rounded" id="char-button">Chardonnay</button>
         </div>
         <div class="tile is-child box" style="line-height: 17;">
-          <p class="title">Cocktail</p>
-          <button class="button" id="rc-button">Random</button>
-          <button class="button" id="gin-button">Gin</button>
-          <button class="button" id="tequila-button">Tequila</button>
-          <button class="button" id="vodka-button">Vodka</button>
-          <button class="button" id="whiskey-button">Whiskey</button>
+          <p class="title">Liquor Selection</p>
+          <button class="button is-responsive is-danger is-rounded" id="rc-button">Random</button>
+          <button class="button is-responsive is-success is-rounded" id="gin-button">Gin</button>
+          <button class="button is-responsive is-primary is-rounded" id="tequila-button">Tequila</button>
+          <button class="button is-responsive is-primary is-light is-rounded" id="vodka-button">Vodka</button>
+          <button class="button is-responsive is-warning is-light is-rounded" id="whiskey-button">Whiskey</button>
         </div>
       </div>
       <div class="tile is-parent">
         <div class="tile is-child box" id="inputbox">
-          <p class="title">Three</p>
+          <p class="title">Our Recommendations</p>
         </div>
       </div>
     </div>
     <script src="./assets/js/cocktail.js"></script>
-    <scrip src="./assets/js/script.js"></scrip>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
   </body>
 </html>
