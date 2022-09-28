@@ -11,108 +11,36 @@
     <section class="hero is-small is-flex is-dark">
       <div class="hero-body">
         <h1 class="title has-text-centered has-text-weight-bold is-size-1 is-family-primary">Alcohol Recommendations</h1>
-        <p class="subtitle has-text-centered is-size-3 is-family-primary">
+        <p class="subtitle has-text-centered is-size-4 is-family-primary">
           <strong>You</strong> drink, <strong>We</strong> recommend!
         </p>
       </div>
     </section>
-<div class="column is-one-third">
-  <div className="box" style="line-height: 70px;">
-  <div class="has-background-danger">
-  <div class="field"> 
-  <label class="label"><strong>Random Cocktail Generator</strong></label>
-  </div>
-  <div class="field">
-    <div class="control">
-      <button class="button">Random</button>
-      <button class="button">Submit</button>
-      <div class="m-1">
-        <div class="dropdown">
-          <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-              <span>Alcohol Preference</span>
-              <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-            <div class="dropdown-content">
-              <a href="#" class="dropdown-item">
-                Vodka
-              </a>
-              <a href="#" class="dropdown-item">
-                Tequila
-              </a>
-              <a href="#" class="dropdown-item">
-                Whiskey
-              </a>
-              <a href="#" class="dropdown-item">
-                Gin
-              </a>
-              <a href="#" class="dropdown-item">
-                Chardonnay
-              </a>
-            </div>
-          </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box" style="line-height: 17;">
+          <p class="title">wine</p>
+          <button class="button" id="rw-button">Random</button>
+      <button class="button" id="cab-button">Cabernet</button>
+      <button class="button" id="pinot-button">Pinot Grigio</button>
+      <button class="button" id="mer-button">Merlot</button>
+      <button class="button" id="char-button">Chardonnay</button>
+        </div>
+        <div class="tile is-child box" style="line-height: 17;">
+          <p class="title">Cocktail</p>
+          <button class="button" id="rc-button">Random</button>
+          <button class="button" id="gin-button">Gin</button>
+          <button class="button" id="tequila-button">Tequila</button>
+          <button class="button" id="vodka-button">Vodka</button>
+          <button class="button" id="whiskey-button">Whiskey</button>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box">
+          <p class="title">Three</p>
         </div>
       </div>
     </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-<div class="column is-one-third">
-  <div className="box" style="line-height: 70px;">
-  <div class="has-background-danger">
-  <div class="field"> 
-  <label class="label"><strong>Random Wine Generator</strong></label>
-  </div>
-  <div class="field">
-    <div class="control">
-      <button class="button">Random</button>
-      <button class="button">Submit</button>
-      <div class="m-1">
-        <div class="dropdown">
-          <div class="dropdown-trigger">
-            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-              <span>Wine Preference</span>
-              <span class="icon is-small">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </button>
-          </div>
-          <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-            <div class="dropdown-content">
-              <a href="#" class="dropdown-item">
-                Merlot
-              </a>
-              <a href="#" class="dropdown-item">
-                Cab
-              </a>
-              <a href="#" class="dropdown-item">
-                Pinot Grigio
-              </a>
-              <a href="#" class="dropdown-item">
-                Pinot Nior
-              </a>
-              <a href="#" class="dropdown-item">
-                Chardonnay
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="column is-full is-offset-7">
-  <div className="box" style="line-height: 500px;">
-  <div class="has-background-danger">
-  <div class="field"> 
-    <label class="label"><strong>input box</strong></label>
+    <script src="./assets/js/cocktail.js"></script>
   </body>
 </html>
