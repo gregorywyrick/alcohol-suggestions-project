@@ -13,11 +13,11 @@ fetch(requestUrl)
 .then(function (response) {
     return response.json();
 })
-.then(function (data) {
-    console.log(data);
-    for (var i = 0; i < data.length; i++) {
-        var listItem = document.createElement('h3');
-        listItem.textContent = data[i].strDrink;
+.then(function ({drinks}) {
+    console.log(drinks);
+    for (var i = 0; i < drinks.length; i++) {
+        var listItem = document.createElement('p');
+        listItem.textContent = drinks[i].strDrink;
         cocktailList.append(listItem);
     }
 });
@@ -34,12 +34,12 @@ fetch(requestUrl)
 .then(function (response) {
     return response.json();
 })
-.then(function (data) {
-    console.log(data);
-    for (var i = 0; i < data.length; i++) {
-        var listItem = document.createElement('li');
-        listItem.textContent = data[i].html_url;
-        cocktailList.appendChild(listItem);
+.then(function ({drinks}) {
+    console.log(drinks);
+    for (var i = 0; i < drinks.length; i++) {
+        var listItem = document.createElement('p');
+        listItem.textContent = drinks[i].strDrink;
+        cocktailList.append(listItem);
     }
 });
 }
@@ -54,11 +54,11 @@ fetch(requestUrl)
 .then(function (response) {
     return response.json();
 })
-.then(function (data) {
-    console.log(data);
-    for (var i = 0; i < data.length; i++) {
+.then(function ({drinks}) {
+    console.log(drinks);
+    for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('li');
-        listItem.textContent = data[i].html_url;
+        listItem.textContent = drinks[i].strDrink;
         cocktailList.appendChild(listItem);
     }
 });
@@ -74,11 +74,11 @@ fetch(requestUrl)
 .then(function (response) {
     return response.json();
 })
-.then(function (data) {
-    console.log(data);
-    for (var i = 0; i < data.length; i++) {
+.then(function ({drinks}) {
+    console.log(drinks);
+    for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('li');
-        listItem.textContent = data[i].html_url;
+        listItem.textContent = drinks[i].strDrink;
         cocktailList.appendChild(listItem);
     }
 });
@@ -95,11 +95,11 @@ fetch(requestUrl)
 .then(function (response) {
     return response.json();
 })
-.then(function (data) {
-    console.log(data);
-    for (var i = 0; i < data.length; i++) {
+.then(function ({drinks}) {
+    console.log(drinks);
+    for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('li');
-        listItem.textContent = data[i].html_url;
+        listItem.textContent = drinks[i].strDrink;
         cocktailList.appendChild(listItem);
     }
 });
