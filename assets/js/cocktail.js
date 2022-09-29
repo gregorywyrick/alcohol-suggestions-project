@@ -14,7 +14,6 @@ fetch(requestUrl)
     return response.json();
 })
 .then(function ({drinks}) {
-    console.log(drinks);
     for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('p');
         var cocktailSteps = document.createElement('li');
@@ -38,7 +37,6 @@ fetch(requestUrl)
     return response.json();
 })
 .then(function ({drinks}) {
-    console.log(drinks);
     for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('p');
         listItem.textContent = drinks[i].strDrink;
@@ -58,7 +56,6 @@ fetch(requestUrl)
     return response.json();
 })
 .then(function ({drinks}) {
-    console.log(drinks);
     for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('li');
         listItem.textContent = drinks[i].strDrink;
@@ -78,7 +75,6 @@ fetch(requestUrl)
     return response.json();
 })
 .then(function ({drinks}) {
-    console.log(drinks);
     for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('li');
         listItem.textContent = drinks[i].strDrink;
@@ -98,7 +94,6 @@ fetch(requestUrl)
     return response.json();
 })
 .then(function ({drinks}) {
-    console.log(drinks);
     for (var i = 0; i < drinks.length; i++) {
         var listItem = document.createElement('li');
         listItem.textContent = drinks[i].strDrink;

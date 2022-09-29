@@ -18,7 +18,6 @@ fetch(requestUrl)
     return response.json();
 })
 .then(function ({recommendedWines}) {
-    console.log(recommendedWines);
     for (var i = 0; i < recommendedWines.length; i++) {
         var listItem = document.createElement('h2');
         var winePrice = document.createElement('li');
@@ -41,7 +40,6 @@ fetch(requestUrl)
     return response.json();
 })
 .then(function ({recommendedWines}) {
-    console.log(recommendedWines);
     for (var i = 0; i < recommendedWines.length; i++) {
         var listItem = document.createElement('h2');
         var winePrice = document.createElement('li');
@@ -64,7 +62,6 @@ function getChardonnay() {
         return response.json();
     })
     .then(function ({recommendedWines}) {
-    console.log(recommendedWines);
     for (var i = 0; i < recommendedWines.length; i++) {
         var listItem = document.createElement('h2');
         var winePrice = document.createElement('li');
@@ -87,7 +84,6 @@ function getMerlot() {
         return response.json();
     })
     .then(function ({recommendedWines}) {
-    console.log(recommendedWines);
     for (var i = 0; i < recommendedWines.length; i++) {
         var listItem = document.createElement('h2');
         var winePrice = document.createElement('li');
