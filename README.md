@@ -1,4 +1,4 @@
-# Alcohol Suggestions Project
+# Alcohol Recommendation Application
 
 ## Description
 
